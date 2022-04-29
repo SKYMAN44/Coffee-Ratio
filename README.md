@@ -9,13 +9,13 @@ UI tests were implemented via POM architecture
     ├── Pages                # Base screen and main app screen
     └── Tests                # Base test and Main app screen tests
 ## Run UITests from CLI
--Navigate to Ratios folder:
+- Navigate to Ratios folder:
 ```console
-foo@bar:~$ cd Ratios
+foo@bar:~Coffee-Ratio$ cd Ratios
 ```
--Run following bash script:
+- Run following bash script:
 ```console
-foo@bar:~$ ./RatioUITest.sh
+foo@bar:~Ratios$ ./RatioUITest.sh
 ```
 
 # Ratios
