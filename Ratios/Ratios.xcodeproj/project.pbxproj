@@ -158,8 +158,8 @@
 		526BD86D240771A300A24AD2 /* RatiosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C006AFE1281C69440067C918 /* Tests */,
 				C006AFE0281C69370067C918 /* Pages */,
+				C006AFE1281C69440067C918 /* Tests */,
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
 			path = RatiosUITests;
