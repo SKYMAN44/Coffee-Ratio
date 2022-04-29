@@ -15,7 +15,6 @@
 		526BD856240771A300A24AD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526BD855240771A300A24AD2 /* Preview Assets.xcassets */; };
 		526BD859240771A300A24AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526BD857240771A300A24AD2 /* LaunchScreen.storyboard */; };
 		526BD864240771A300A24AD2 /* RatiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD863240771A300A24AD2 /* RatiosTests.swift */; };
-		526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD86E240771A300A24AD2 /* RatiosUITests.swift */; };
 		526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD87D24077F4200A24AD2 /* TimerView.swift */; };
 		526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD88124079A5B00A24AD2 /* TimerViewModel.swift */; };
 		526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */; };
@@ -61,7 +60,6 @@
 		526BD863240771A300A24AD2 /* RatiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosTests.swift; sourceTree = "<group>"; };
 		526BD865240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526BD86A240771A300A24AD2 /* RatiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		526BD86E240771A300A24AD2 /* RatiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosUITests.swift; sourceTree = "<group>"; };
 		526BD870240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526BD87D24077F4200A24AD2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		526BD88124079A5B00A24AD2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 			children = (
 				C006AFE1281C69440067C918 /* Tests */,
 				C006AFE0281C69370067C918 /* Pages */,
-				526BD86E240771A300A24AD2 /* RatiosUITests.swift */,
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
 			path = RatiosUITests;
@@ -369,7 +366,6 @@
 				C006AFE3281C69520067C918 /* BaseScreen.swift in Sources */,
 				C006AFEA281C69BD0067C918 /* CoffeeScreenTest.swift in Sources */,
 				C006AFE5281C697F0067C918 /* CoffeeScreen.swift in Sources */,
-				526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
