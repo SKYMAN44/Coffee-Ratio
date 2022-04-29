@@ -24,6 +24,10 @@
 		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
 		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
 		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
+		C006AFE3281C69520067C918 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006AFE2281C69520067C918 /* BaseScreen.swift */; };
+		C006AFE5281C697F0067C918 /* CoffeeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006AFE4281C697F0067C918 /* CoffeeScreen.swift */; };
+		C006AFE7281C69A80067C918 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006AFE6281C69A80067C918 /* BaseTest.swift */; };
+		C006AFEA281C69BD0067C918 /* CoffeeScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006AFE9281C69BD0067C918 /* CoffeeScreenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
 		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
+		C006AFE2281C69520067C918 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		C006AFE4281C697F0067C918 /* CoffeeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeScreen.swift; sourceTree = "<group>"; };
+		C006AFE6281C69A80067C918 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		C006AFE9281C69BD0067C918 /* CoffeeScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeScreenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,8 @@
 		526BD86D240771A300A24AD2 /* RatiosUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C006AFE1281C69440067C918 /* Tests */,
+				C006AFE0281C69370067C918 /* Pages */,
 				526BD86E240771A300A24AD2 /* RatiosUITests.swift */,
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
@@ -177,6 +187,24 @@
 				52712491240B563000F26EF3 /* CalculatorViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C006AFE0281C69370067C918 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C006AFE2281C69520067C918 /* BaseScreen.swift */,
+				C006AFE4281C697F0067C918 /* CoffeeScreen.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C006AFE1281C69440067C918 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C006AFE6281C69A80067C918 /* BaseTest.swift */,
+				C006AFE9281C69BD0067C918 /* CoffeeScreenTest.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C006AFE7281C69A80067C918 /* BaseTest.swift in Sources */,
+				C006AFE3281C69520067C918 /* BaseScreen.swift in Sources */,
+				C006AFEA281C69BD0067C918 /* CoffeeScreenTest.swift in Sources */,
+				C006AFE5281C697F0067C918 /* CoffeeScreen.swift in Sources */,
 				526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
