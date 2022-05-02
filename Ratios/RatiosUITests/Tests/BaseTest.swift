@@ -21,13 +21,4 @@ class BaseTest: XCTestCase {
     open override func tearDown() {
         app.terminate()
     }
-    
-//    override func record(_ issue: XCTIssue) {
-//        let screenshot = XCUIScreen.main.screenshot()
-//        let attachment = XCTAttachment(screenshot: screenshot)
-//        attachment.lifetime = .deleteOnSuccess
-//        attachment.name = issue.description
-//        add(attachment)
-//    }
 }
-

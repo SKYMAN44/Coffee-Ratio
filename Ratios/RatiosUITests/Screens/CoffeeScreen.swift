@@ -80,7 +80,8 @@ final class CoffeeScreen: BaseScreen {
     @discardableResult
     func checkCalculationsResult(_ correctResult: String) -> Self {
         let value = elementById(.waterAmountLabel).label
-        XCTAssertTrue(value == correctResult, "gramms of water must be equal \(correctResult)")
+        let isEqual = value.elementsEqual(correctResult)
+        XCTAssertEqual(isEqual, true, "gramms of water must be equal \(correctResult)")
         
         return self
     }

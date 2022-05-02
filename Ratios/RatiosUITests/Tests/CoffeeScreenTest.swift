@@ -11,11 +11,6 @@ import XCTest
 final class CoffeeScreenTest: BaseTest {
     lazy var coffeeScreen = CoffeeScreen(app)
     
-    // MARK: - Setup
-    override func setUp() {
-        super.setUp()
-    }
-    
     func testValidateCoffeeScreenItems() {
         coffeeScreen.validateUILoading()
     }
@@ -36,7 +31,6 @@ final class CoffeeScreenTest: BaseTest {
             .enterGramms("12.2")
             .enterWaterRatio("10")
             .checkCalculationsResult("122.0")
-//            .clearWaterRatio()
 //            .enterWaterRatio("5.1")
 //            .checkCalculationsResult("62.22")
 //       this will cause test to fail
@@ -61,19 +55,13 @@ final class CoffeeScreenTest: BaseTest {
             .enterGramms("1a")
             .enterWaterRatio("2")
             .checkCalculationsResult("0.0")
-//            .enterGramms("aa")
-//            .enterWaterRatio("aa")
-//            .checkCalculationsResult("0.0")
-//            .enterGramms("2")
-//            .enterWaterRatio("agl")
-//            .checkCalculationsResult("0.0")
     }
     
     // MARK: - TimerTests
     func testLongTimer() {
         coffeeScreen
             .startTimer()
-            .checkTimerResult("01:01")
+            .checkTimerResult("00:01")
     }
     
     func testBasicTimer() {
