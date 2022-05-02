@@ -1,3 +1,23 @@
+# Note
+Repository was forked in order to implement task for VK internship: 
+## UITests
+UI tests were implemented via POM architecture 
+
+## UITests structure 
+
+    .
+    ├── Pages                # Base screen and main app screen
+    └── Tests                # Base test and Main app screen tests
+## Run UITests from CLI
+- Navigate to Ratios folder:
+```console
+foo@bar:~Coffee-Ratio$ cd Ratios
+```
+- Run following bash script:
+```console
+foo@bar:~Ratios$ ./RatioUITest.sh
+```
+
 # Ratios
 [![Build Status](https://travis-ci.org/johnmahlon/Coffee-Ratio.svg?branch=master)](https://travis-ci.org/johnmahlon/Coffee-Ratio)
 
