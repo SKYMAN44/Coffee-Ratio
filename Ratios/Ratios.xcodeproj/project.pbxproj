@@ -158,7 +158,7 @@
 		526BD86D240771A300A24AD2 /* RatiosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C006AFE0281C69370067C918 /* Pages */,
+				C006AFE0281C69370067C918 /* Screens */,
 				C006AFE1281C69440067C918 /* Tests */,
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
@@ -186,13 +186,13 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		C006AFE0281C69370067C918 /* Pages */ = {
+		C006AFE0281C69370067C918 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				C006AFE2281C69520067C918 /* BaseScreen.swift */,
 				C006AFE4281C697F0067C918 /* CoffeeScreen.swift */,
 			);
-			path = Pages;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		C006AFE1281C69440067C918 /* Tests */ = {

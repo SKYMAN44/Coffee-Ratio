@@ -44,6 +44,8 @@ struct WaterInput: View {
                             )
                         .multilineTextAlignment(.center)
                         .font(.system(size: 24))
+                    // for better test Architecture
+                        .accessibility(identifier: "waterTextField")
 
                     Text("water")
                         .fixedSize()

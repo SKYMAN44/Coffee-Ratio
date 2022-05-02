@@ -11,6 +11,7 @@ import XCTest
 final class CoffeeScreenTest: BaseTest {
     lazy var coffeeScreen = CoffeeScreen(app)
     
+    // MARK: - Setup
     override func setUp() {
         super.setUp()
     }
@@ -24,20 +25,20 @@ final class CoffeeScreenTest: BaseTest {
             .enterGramms("10")
             .enterWaterRatio("1")
             .checkCalculationsResult("10.0")
-            .verifyTimer("00:05")
+            .startTimer()
+            .checkTimerResult("00:04")
+            .resetTimer()
     }
     
-    func testLongTimer() {
-        coffeeScreen.verifyTimer("01:01")
-    }
-    
+    // MARK: - CoffeeRatioTests
     func testDecimalNumbers() {
         coffeeScreen
             .enterGramms("12.2")
-            .enterWaterRatio("1")
-            .checkCalculationsResult("12.2")
-//            .enterWaterRatio("2.5")
-//            .checkCalculationsResult("30.5")
+            .enterWaterRatio("10")
+            .checkCalculationsResult("122.0")
+//            .clearWaterRatio()
+//            .enterWaterRatio("5.1")
+//            .checkCalculationsResult("62.22")
 //       this will cause test to fail
     }
     
@@ -48,7 +49,34 @@ final class CoffeeScreenTest: BaseTest {
             .checkCalculationsResult("100.0")
     }
     
-    func testTimer() {
+    func testZeros() {
+        coffeeScreen
+            .enterGramms("0")
+            .enterWaterRatio("1")
+            .checkCalculationsResult("0.0")
+    }
+    
+    func testWrongInput() {
+        coffeeScreen
+            .enterGramms("1a")
+            .enterWaterRatio("2")
+            .checkCalculationsResult("0.0")
+//            .enterGramms("aa")
+//            .enterWaterRatio("aa")
+//            .checkCalculationsResult("0.0")
+//            .enterGramms("2")
+//            .enterWaterRatio("agl")
+//            .checkCalculationsResult("0.0")
+    }
+    
+    // MARK: - TimerTests
+    func testLongTimer() {
+        coffeeScreen
+            .startTimer()
+            .checkTimerResult("01:01")
+    }
+    
+    func testBasicTimer() {
         coffeeScreen
             .startTimer()
             .checkTimerResult("00:03")
@@ -57,6 +85,8 @@ final class CoffeeScreenTest: BaseTest {
             .checkTimerResult("00:02")
             .pauseTimer()
             .checkTimerResult("00:02")
+            .startTimer()
+            .checkTimerResult("00:04")
             .resetTimer()
             .checkTimerResult("00:00")
     }

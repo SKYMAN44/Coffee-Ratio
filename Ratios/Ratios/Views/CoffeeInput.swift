@@ -28,6 +28,8 @@ struct CoffeeInput: View {
                         .stroke(Color("Primary"), lineWidth: 3)
                 )
                 .multilineTextAlignment(.center)
+            // for better test Architecture
+                .accessibility(identifier: "gramsTextField")
 
             Text("grams")
                 .fixedSize()

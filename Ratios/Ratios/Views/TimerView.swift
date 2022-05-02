@@ -35,6 +35,8 @@ struct TimerView: View {
                     let minutes = String(format :"%02d", self.secondsPassed % 60)
                     self.timerText = "\(hours):\(minutes)"
                 }
+            // for better test Architecture
+                .accessibility(identifier: "TimerLabel")
 
             Spacer()
                 .frame(height: 20)
@@ -47,6 +49,8 @@ struct TimerView: View {
                     .background(Color("Primary"))
                     .cornerRadius(CGFloat(10))
                     .foregroundColor(Color("AltText"))
+                // for better test Architecture
+                    .accessibility(identifier: "StartPauseButton")
             }
 
             Spacer()
@@ -63,6 +67,8 @@ struct TimerView: View {
                 .font(.system(size: 17))
                 .fixedSize()
                 .foregroundColor(Color("Primary"))
+                // for better test Architecture
+                .accessibility(identifier: "ResetButton")
             }
         }
     }

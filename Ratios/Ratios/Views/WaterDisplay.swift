@@ -29,6 +29,7 @@ struct WaterDisplay: View {
             )
                 .fixedSize()
                 .font(.system(size: 72))
+                .accessibility(identifier: "WaterNeededLabel")
 
 
             Text("grams of water")
